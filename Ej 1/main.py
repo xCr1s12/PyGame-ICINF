@@ -16,7 +16,7 @@ running = True
 
 
 personaje = Triangulo(400, 100)
-personaje2 = Circu(200, 50)
+personaje2 = Circulo(200, 50)
 while running:
     screen.fill((0,0,0))
     for event in pygame.event.get():
