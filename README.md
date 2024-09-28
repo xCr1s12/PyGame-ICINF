@@ -1,4 +1,4 @@
-[Logo_repositorio](Images/Logo.png)
+[](Images/Logo.png)
 
 
         En este repositorio se encuentra todo lo que voy aprendiendo de Pygame en el ramo de POO 
