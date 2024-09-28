@@ -2,16 +2,16 @@ import pygame
 import math as mt
 
 class Circulo():
-    def __init__(self, x , y, width):
+    def __init__(self, x , y, radius):
         self.x = x
         self.y = y
         self.color = (192,192,192)
         self.velocity = 0.2
-        self.width = width
+        self.radius = radius
 
     def draw(self, screen):
         circle = (self.x ,self.y)
-        pygame.draw.circle(screen , self.color , circle, self.width)
+        pygame.draw.circle(screen , self.color , circle, self.radius)
 
     def move(self, key):
         self.ex = 0
@@ -32,12 +32,11 @@ class Circulo():
         self.x += self.ex
         self.y += self.ey
     
-    def colision(self, other):
-        self.distance = mt.sqrt((other.x - self.x)**2 + (other.y - self.y)**2)
-        self.collision = False
-        if self.distance <= (self.width/2 + other.width/2):
-            self.collision = True
-        else:
-            self.collision = False
+    
+
+    
+    def posicion(self):
+        return [self.x, self.y]    
+
 
  

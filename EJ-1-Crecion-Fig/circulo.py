@@ -13,13 +13,13 @@ class Circulo():
         pygame.draw.circle(screen , self.color , circulo, 20)
 
     def moverC(self, key):
-        if key[pygame.K_DOWN]:
+        if key[pygame.K_s]:
             self.y += self.velocidad
-        if key[pygame.K_UP]:
+        if key[pygame.K_w]:
             self.y -= self.velocidad
-        if key[pygame.K_LEFT]:
+        if key[pygame.K_a]:
             self.x -= self.velocidad
-        if key[pygame.K_RIGHT]:
+        if key[pygame.K_d]:
             self.x += self.velocidad
            
  
